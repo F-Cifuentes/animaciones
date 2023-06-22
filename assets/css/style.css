@@ -209,3 +209,56 @@ body {
     align-items: center;
     text-align: center;
 }
+.card img {
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+.card:hover img {
+    filter: grayscale(0%);
+}
+.logo {
+    width: 90px;
+    height: 50px;
+    animation: rotate 13s infinite linear;
+    color: white
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .íconos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .redes {
+    margin-bottom: 10px;
+  }
+  
+  .redes a {
+    margin-right: 10px;
+  }
+  
+  .redes i {
+    font-size: 30px;
+    transition: transform 0.3s ease-in-out;
+    color: rgb(225, 230, 224); /* Cambia el color aquí */
+  }
+  
+  .redes i:hover {
+    transform: scale(1.2);
+  }
+  
+  .derechos {
+    font-size: 14px;
+    color: #888;
+  }
+  
